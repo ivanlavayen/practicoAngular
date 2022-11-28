@@ -1,0 +1,10 @@
+<div>
+    <h1>CARRITO</h1>
+    <ul>
+       <li *ngFor = "let book of books$ | async">
+        {{book.name}}-{{book.author}}-{{book.quantity}}
+        <button class="btn btn-primary" (click)="cancelCart(book)">Cancelar</button>
+       </li>
+       
+    </ul>
+</div>
